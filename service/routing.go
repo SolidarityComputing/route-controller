@@ -4,8 +4,9 @@ import (
 	"context"
 	"errors"
 	"github.com/coreos/etcd/clientv3"
-	"github.com/kfcoding-container-api/configs"
-	"github.com/kfcoding-container-api/model"
+	"github.com/emicklei/go-restful/log"
+	"github.com/sc-route-api/configs"
+	"github.com/sc-route-api/model"
 	"path"
 )
 
@@ -55,6 +56,7 @@ func (service *RoutingTraefikService) AddRule(rule *model.RoutingBody) error {
 func (service *RoutingTraefikService) DeleteRule(name string) error {
 	// delete backend
 	key := path.Join(configs.TraefikPrefix, "backends/", name, "/servers/1/url")
+	log.Print(key)
 	if _, err := service.etcdClient.EctdClientV3.Delete(context.Background(), key); nil != err {
 		return err
 	}

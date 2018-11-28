@@ -2,8 +2,8 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/kfcoding-container-api/configs"
-	"github.com/kfcoding-container-api/service"
+	"github.com/sc-route-api/configs"
+	"github.com/sc-route-api/service"
 )
 
 // SetupWorkspaceRouter, 设置workspace相关的路由
@@ -20,5 +20,5 @@ func SetupWorkspaceRouter(service service.WorkspaceService, r *gin.Engine) {
 	}
 
 	w.POST("/add", service.CreateRoutingApi)
-	w.POST("/delete", service.CreateRoutingApi)
+	w.POST("/delete", service.DeleteRoutingApi)
 }

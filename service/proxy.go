@@ -2,7 +2,7 @@ package service
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/kfcoding-container-api/model"
+	"github.com/sc-route-api/model"
 	"net/http"
 )
 

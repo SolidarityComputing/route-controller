@@ -16,7 +16,7 @@ var (
 	EtcdUsername  = ""
 	EtcdPassword  = ""
 	EtcdTimeout   = 10 * time.Second
-	EtcdEndPoints = []string{"http://localhost:2379"}
+	EtcdEndPoints = []string{"http://rancher.kfcoding.com:2379"}
 
 	TraefikPrefix = "/kfcoding/traefik/"
 )

@@ -17,7 +17,7 @@ build using docker golang
 
 docker run -it -v /Users/wsl/Projects/go/src:/go/src golang:1.10.3-alpine3.8 sh
 
-cd src/github.com/kfcoding-container-api/ && go build -o server main.go && exit
+cd src/github.com/sc-route-api/ && go build -o server main.go && exit
 ```
 
 ## run in docker alpine:latest

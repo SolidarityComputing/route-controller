@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/kfcoding-container-api/configs"
-	"github.com/kfcoding-container-api/router"
-	"github.com/kfcoding-container-api/service"
+	"github.com/sc-route-api/configs"
+	"github.com/sc-route-api/router"
+	"github.com/sc-route-api/service"
 	"log"
 )
 
